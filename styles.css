@@ -1,0 +1,203 @@
+body {
+    background: #fff;
+    font-family: "Comfortaa", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 2em 0;
+    background: #f4f4f4;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 0;
+    object-fit: cover;
+    border: 5px solid #333; /* Adding a border for better emphasis */
+    transition: transform 0.3s ease-in-out; /* Adding transition for hover effect */
+}
+
+.projects-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.projects-button:hover {
+    background: #555;
+}
+
+.profile-image:hover {
+    transform: scale(1.1); /* Slightly enlarges the image on hover */
+}
+
+header h1 {
+    margin: 0.5em 0;
+    color: #333;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5em;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #666;
+}
+
+nav {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Adding transition for hover effect */
+}
+
+nav ul li a:hover {
+    color: #ff6347; /* Change link color on hover */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Adding text shadow on hover */
+}
+
+main {
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 3em;
+    padding: 2em; /* Adding padding to make hover effect more noticeable */
+    transition: background 0.5s ease-in-out; /* Adding transition for section hover effect */
+}
+
+section:hover {
+    background: #eaeaea;
+}
+
+h2 {
+    color: #333;
+    font-family: "Montserrat", sans-serif;
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5em;
+    transition: color 0.3s ease, border-color 0.3s ease; /* Adding transition for hover effect */
+}
+
+h2:hover {
+    color: #ff6347; /* Change header color on hover */
+    border-color: #ff6347; /* Change border color on hover */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    transition: background-color 0.3s ease; /* Adding transition for hover effect */
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Highlight table row on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    max-width: 100px;
+    position: fixed;
+    bottom: 0;
+    right: 25px;
+}
+
+footer a {
+    text-decoration: none;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px dashed #333;
+    color: #333;
+    margin: 5px;
+    transition: background 0.3s ease, color 0.3s ease; /* Adding transition for hover effect */
+}
+
+footer a:hover {
+    background: #333; /* Change background on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+footer .icons {
+    margin-top: 12px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+/* Modern Effects */
+section {
+    position: relative;
+    padding: 5em;
+    height: auto;
+    background: #f9f9f9;
+    transition: background 0.5s ease-in-out;
+}
+
+section:hover {
+    background: #eaeaea;
+}
+
+h2, h3 {
+    cursor: pointer;
+    transition: color 0.3s ease; /* Adding transition for hover effect */
+}
+
+h2:hover, h3:hover {
+    color: #ff6347; /* Change color on hover */
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 0.5em 0;
+    }
+}
